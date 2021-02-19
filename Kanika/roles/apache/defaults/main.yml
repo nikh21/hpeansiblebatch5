@@ -1,0 +1,16 @@
+#extra software
+ap_extra_software:
+  - vim
+  - git
+
+#document root directory
+ap_http_host_dir: "apacheserver"
+
+#configuration file name
+ap_http_conf_file: "apacheserver.conf"
+
+#httpd port for webserver
+ap_http_port: 8080
+
+#source code location that we want to deploy
+ap_source_code_location: 'files/source_code/'
