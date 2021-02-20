@@ -1,0 +1,17 @@
+          ##Master Playbook for Installation of Apache Server######
+
+
+#### copy the "myapache" folder to your roles
+### make sure your roles path is added in ansible.cfg
+
+## make changes to the inventory.txt file as per your target info
+
+
+-
+ name: Apache Web Server Installation and configuration
+ host: Node1
+ roles:
+   - role: myapache
+
+
+### Run this master playbook on control node
