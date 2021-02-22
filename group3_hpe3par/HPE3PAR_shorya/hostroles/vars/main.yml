@@ -1,0 +1,6 @@
+---
+host_name: "host101"
+host_new_name: "newuser101"
+storage_system_ip: 192.168.0.1
+storage_system_username: "user101"
+storage_system_password: "password101"
