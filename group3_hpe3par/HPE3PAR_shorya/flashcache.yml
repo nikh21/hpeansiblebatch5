@@ -1,0 +1,5 @@
+---
+- name: Work with HPE 3PAR Flash Cache
+  hosts: 3PAR
+  roles:
+    - flashcacheroles

@@ -1,0 +1,39 @@
+
+
+---
+##Code to clearn config for VLAN, Volume and Host on 3Par##
+-  hosts:localhost
+   vars:
+     stoarge_ip: '10.18.2.1'
+     storage_username: 'seema'
+     storage_password: 'password@123' 
+     nvolume_name: 'test_volume'
+     host_name: 'test'
+     lunid: '100'
+
+   tasks: 
+     - name: Delete VLUN
+       hpe3par_vlun: 
+         stoarge_ip
+         storage_username
+         storage_password
+         state= unexport_volume_from_host 
+         volume_name
+         host_name
+         lunid
+
+     - name: Delete Volume test_voulme
+       hpe3par_volume:
+         stoarge_ip
+         storage_username
+         storage_password
+         state= absent
+         volume_name = test_volume
+
+     - name: Delete Host test
+       hpe3par_host:
+         stoarge_ip
+         storage_username
+         storage_password
+         state=absent
+         host_name= test
