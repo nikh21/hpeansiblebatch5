@@ -36,7 +36,7 @@
           name: mssql-tools
           state: present
         environment:
-          accept_eula: Y
+          ACCEPT_EULA: Y
 
 
       - name: to add the mssql to the path
